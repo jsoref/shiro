@@ -501,7 +501,7 @@ public abstract class AbstractRememberMeManager implements RememberMeManager {
     }
 
     /**
-     * De-serializes the given byte array by using the {@link #getSerializer() serializer}'s
+     * Deserializes the given byte array by using the {@link #getSerializer() serializer}'s
      * {@link Serializer#deserialize deserialize} method.
      *
      * @param serializedIdentity the previously serialized {@code PrincipalCollection} as a byte array
