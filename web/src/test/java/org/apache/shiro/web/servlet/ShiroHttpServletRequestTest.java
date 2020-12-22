@@ -53,7 +53,7 @@ public class ShiroHttpServletRequestTest extends TestCase {
      * Test asserting <a href="https://issues.apache.org/jira/browse/SHIRO-637">SHIRO-637<a/>.
      */
     @Test
-    public void testRegetSession() throws Exception {
+    public void testReGetSession() throws Exception {
         Session session1 = createMock(Session.class);
         Session session2 = createMock(Session.class);
     	
