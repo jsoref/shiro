@@ -44,7 +44,7 @@ public class AspectjAnnotationsAuthorizingMethodInterceptor extends AnnotationsA
      * Performs the method interception of the before advice at the specified joint point.
      *
      * @param aJoinPoint The joint point to intercept.
-     * @throws Throwable If an error occurs berforming the method invocation.
+     * @throws Throwable If an error occurs performing the method invocation.
      */
     protected void performBeforeInterception(JoinPoint aJoinPoint) throws Throwable {
         if (log.isTraceEnabled()) log.trace("#### Invoking a method decorated with a Shiro annotation" +
