@@ -416,7 +416,7 @@ public abstract class AbstractRememberMeManager implements RememberMeManager {
      * @param bytes          the bytes to decrypt if necessary and then deserialize.
      * @param subjectContext the contextual data, usually provided by a {@link Subject.Builder} implementation, that
      *                       is being used to construct a {@link Subject} instance.
-     * @return the de-serialized and possibly decrypted principals
+     * @return the deserialized and possibly decrypted principals
      */
     protected PrincipalCollection convertBytesToPrincipals(byte[] bytes, SubjectContext subjectContext) {
         if (getCipherService() != null) {
@@ -505,7 +505,7 @@ public abstract class AbstractRememberMeManager implements RememberMeManager {
      * {@link Serializer#deserialize deserialize} method.
      *
      * @param serializedIdentity the previously serialized {@code PrincipalCollection} as a byte array
-     * @return the de-serialized (reconstituted) {@code PrincipalCollection}
+     * @return the deserialized (reconstituted) {@code PrincipalCollection}
      */
     protected PrincipalCollection deserialize(byte[] serializedIdentity) {
         return getSerializer().deserialize(serializedIdentity);
