@@ -29,7 +29,7 @@ import java.util.Arrays;
 
 /**
  * Extends the annotations authorizing method interceptor class hierarchie to adapt
- * an aspectj {@link JoinPoint} into a {@link MethodInvocation} amd to perform the
+ * an aspectj {@link JoinPoint} into a {@link MethodInvocation} and to perform the
  * authorization of method invocations.
  *
  * @since 1.0
