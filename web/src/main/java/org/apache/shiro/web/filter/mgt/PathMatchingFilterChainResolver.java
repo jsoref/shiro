@@ -101,7 +101,7 @@ public class PathMatchingFilterChainResolver implements FilterChainResolver {
 
         String requestURI = getPathWithinApplication(request);
 
-        // in spring web, the requestURI "/resource/menus" ---- "resource/menus/" bose can access the resource
+        // in spring web, the requestURI "/resource/menus" ---- "resource/menus/" base can access the resource
         // but the pathPattern match "/resource/menus" can not match "resource/menus/"
         // user can use requestURI + "/" to simply bypassed chain filter, to bypassed shiro protect
         if(requestURI != null && !DEFAULT_PATH_SEPARATOR.equals(requestURI)
