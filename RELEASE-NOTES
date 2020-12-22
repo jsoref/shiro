@@ -121,7 +121,7 @@ Test
 Task
 
     [SHIRO-690] - Validate JDK11 compatibility
-    [SHIRO-692] - Upgrade and enforce min buid maven version to 3.5.0
+    [SHIRO-692] - Upgrade and enforce min build maven version to 3.5.0
     [SHIRO-698] - Improve build with maven profile
     [SHIRO-734] - Remove Spring-client sample
     [SHIRO-735] - Shiro does not support servlet-3.1 void method(@Suspended AsyncResponse)
