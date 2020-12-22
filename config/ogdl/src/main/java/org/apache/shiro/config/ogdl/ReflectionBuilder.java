@@ -413,7 +413,7 @@ public class ReflectionBuilder {
             String msg = "The object with id [" + id + "] has not yet been defined and therefore cannot be " +
                     "referenced.  Please ensure objects are defined in the order in which they should be " +
                     "created and made available for future reference.";
-            throw new UnresolveableReferenceException(msg);
+            throw new UnresolvableReferenceException(msg);
         }
         return o;
     }
