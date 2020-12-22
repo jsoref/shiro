@@ -1,0 +1,11 @@
+/shiro\.ini$
+ignore$
+\.jks$
+\.pem$
+\.png$
+^crypto/cipher/src/test/groovy/org/apache/shiro/crypto/cipher/AesCipherServiceTest\.groovy$
+^crypto/cipher/src/test/groovy/org/apache/shiro/crypto/cipher/BlowfishCipherServiceTest\.groovy$
+^LICENSE$
+^src/license/
+^web/src/test/java/org/apache/shiro/web/mgt/CookieRememberMeManagerTest\.java$
+^\.github/
