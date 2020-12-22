@@ -26,40 +26,40 @@ import org.apache.shiro.config.ConfigurationException;
  *
  * @since 0.9 RC2
  */
-public class UnresolveableReferenceException extends ConfigurationException {
+public class UnresolvableReferenceException extends ConfigurationException {
 
     /**
-     * Creates a new UnresolveableReferenceException.
+     * Creates a new UnresolvableReferenceException.
      */
-    public UnresolveableReferenceException() {
+    public UnresolvableReferenceException() {
         super();
     }
 
     /**
-     * Constructs a new UnresolveableReferenceException.
+     * Constructs a new UnresolvableReferenceException.
      *
      * @param message the reason for the exception
      */
-    public UnresolveableReferenceException(String message) {
+    public UnresolvableReferenceException(String message) {
         super(message);
     }
 
     /**
-     * Constructs a new UnresolveableReferenceException.
+     * Constructs a new UnresolvableReferenceException.
      *
      * @param cause the underlying Throwable that caused this exception to be thrown.
      */
-    public UnresolveableReferenceException(Throwable cause) {
+    public UnresolvableReferenceException(Throwable cause) {
         super(cause);
     }
 
     /**
-     * Constructs a new UnresolveableReferenceException.
+     * Constructs a new UnresolvableReferenceException.
      *
      * @param message the reason for the exception
      * @param cause   the underlying Throwable that caused this exception to be thrown.
      */
-    public UnresolveableReferenceException(String message, Throwable cause) {
+    public UnresolvableReferenceException(String message, Throwable cause) {
         super(message, cause);
     }
 }

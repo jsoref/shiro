@@ -267,8 +267,8 @@ class ReflectionBuilderTest {
         ReflectionBuilder builder = new ReflectionBuilder();
         try {
             builder.buildObjects(defs);
-            fail "should have encountered an " + UnresolveableReferenceException.class.name
-        } catch (UnresolveableReferenceException expected) {
+            fail "should have encountered an " + UnresolvableReferenceException.class.name
+        } catch (UnresolvableReferenceException expected) {
         }
     }
 
