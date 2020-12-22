@@ -206,7 +206,7 @@ public class SimpleAccount implements Account, MergableAuthenticationInfo, Salte
     ============================================*/
 
     /**
-     * Returns the principals, aka the identifying attributes (username, user id, first name, last name, etc) of this
+     * Returns the principals, aka the identifying attributes (username, user id, first name, last name, etc.) of this
      * Account.
      *
      * @return all the principals, aka the identifying attributes, of this Account.
@@ -216,7 +216,7 @@ public class SimpleAccount implements Account, MergableAuthenticationInfo, Salte
     }
 
     /**
-     * Sets the principals, aka the identifying attributes (username, user id, first name, last name, etc) of this
+     * Sets the principals, aka the identifying attributes (username, user id, first name, last name, etc.) of this
      * Account.
      *
      * @param principals all the principals, aka the identifying attributes, of this Account.

@@ -445,7 +445,7 @@ public class JndiLdapContextFactory implements LdapContextFactory {
      * {@link #createLdapContext(java.util.Hashtable) created} and returned.
      *
      * @param principal   the principal to use when acquiring a connection to the LDAP directory
-     * @param credentials the credentials (password, X.509 certificate, etc) to use when acquiring a connection to the
+     * @param credentials the credentials (password, X.509 certificate, etc.) to use when acquiring a connection to the
      *                    LDAP directory
      * @return the acquired {@code LdapContext} connection bound using the specified principal and credentials.
      * @throws NamingException

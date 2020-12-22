@@ -28,7 +28,7 @@ import org.apache.shiro.authc.AuthenticationToken;
  *
  * <p><tt>Realm</tt>s usually have a 1-to-1 correspondence with a datasource such as a relational database,
  * file system, or other similar resource.  As such, implementations of this interface use datasource-specific APIs to
- * determine authorization data (roles, permissions, etc), such as JDBC, File IO, Hibernate or JPA, or any other
+ * determine authorization data (roles, permissions, etc.), such as JDBC, File IO, Hibernate or JPA, or any other
  * Data Access API.  They are essentially security-specific
  * <a href="http://en.wikipedia.org/wiki/Data_Access_Object" target="_blank">DAO</a>s.
  *
