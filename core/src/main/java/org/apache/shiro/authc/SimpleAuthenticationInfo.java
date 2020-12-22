@@ -29,13 +29,13 @@ import java.util.Set;
 
 
 /**
- * Simple implementation of the {@link org.apache.shiro.authc.MergableAuthenticationInfo} interface that holds the principals and
+ * Simple implementation of the {@link org.apache.shiro.authc.MergeableAuthenticationInfo} interface that holds the principals and
  * credentials.
  *
  * @see org.apache.shiro.realm.AuthenticatingRealm
  * @since 0.9
  */
-public class SimpleAuthenticationInfo implements MergableAuthenticationInfo, SaltedAuthenticationInfo {
+public class SimpleAuthenticationInfo implements MergeableAuthenticationInfo, SaltedAuthenticationInfo {
 
     /**
      * The principals identifying the account associated with this AuthenticationInfo instance.

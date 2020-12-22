@@ -19,7 +19,7 @@
 package org.apache.shiro.authc.pam;
 
 import org.apache.shiro.authc.AuthenticationInfo;
-import org.apache.shiro.authc.MergableAuthenticationInfo;
+import org.apache.shiro.authc.MergeableAuthenticationInfo;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.SimplePrincipalCollection;
@@ -47,7 +47,7 @@ public class FirstSuccessfulStrategyTest {
 
     @Test
     public void testMergeWithValidAggregateInfo() {
-        AuthenticationInfo aggregate = new MergableAuthenticationInfo() {
+        AuthenticationInfo aggregate = new MergeableAuthenticationInfo() {
             @Override
             public void merge(AuthenticationInfo info) {
 
@@ -69,7 +69,7 @@ public class FirstSuccessfulStrategyTest {
 
     @Test
     public void testMergeWithInvalidAggregateInfo() {
-        AuthenticationInfo aggregate = new MergableAuthenticationInfo() {
+        AuthenticationInfo aggregate = new MergeableAuthenticationInfo() {
             @Override
             public void merge(AuthenticationInfo info) {
 

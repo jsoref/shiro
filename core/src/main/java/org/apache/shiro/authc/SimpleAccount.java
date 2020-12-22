@@ -36,7 +36,7 @@ import java.util.Set;
  *
  * @since 0.1
  */
-public class SimpleAccount implements Account, MergableAuthenticationInfo, SaltedAuthenticationInfo, Serializable {
+public class SimpleAccount implements Account, MergeableAuthenticationInfo, SaltedAuthenticationInfo, Serializable {
 
     /*--------------------------------------------
     |    I N S T A N C E   V A R I A B L E S    |

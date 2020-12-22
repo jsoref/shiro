@@ -71,19 +71,19 @@ public abstract class AbstractAuthenticationStrategy implements AuthenticationSt
      * aggregate for continued use throughout the login process.
      * <p/>
      * This implementation merely checks to see if the specified <code>aggregate</code> argument is an instance of
-     * {@link org.apache.shiro.authc.MergableAuthenticationInfo MergableAuthenticationInfo}, and if so, calls
+     * {@link org.apache.shiro.authc.MergeableAuthenticationInfo MergeableAuthenticationInfo}, and if so, calls
      * <code>aggregate.merge(info)</code>  If it is <em>not</em> an instance of
-     * <code>MergableAuthenticationInfo</code>, an {@link IllegalArgumentException IllegalArgumentException} is thrown.
+     * <code>MergeableAuthenticationInfo</code>, an {@link IllegalArgumentException IllegalArgumentException} is thrown.
      * Can be overridden by subclasses for custom merging behavior if implementing the
-     * {@link org.apache.shiro.authc.MergableAuthenticationInfo MergableAuthenticationInfo} is not desired for some reason.
+     * {@link org.apache.shiro.authc.MergeableAuthenticationInfo MergeableAuthenticationInfo} is not desired for some reason.
      */
     protected AuthenticationInfo merge(AuthenticationInfo info, AuthenticationInfo aggregate) {
-        if( aggregate instanceof MergableAuthenticationInfo ) {
-            ((MergableAuthenticationInfo)aggregate).merge(info);
+        if( aggregate instanceof MergeableAuthenticationInfo ) {
+            ((MergeableAuthenticationInfo)aggregate).merge(info);
             return aggregate;
         } else {
             throw new IllegalArgumentException( "Attempt to merge authentication info from multiple realms, but aggregate " +
-                      "AuthenticationInfo is not of type MergableAuthenticationInfo." );
+                      "AuthenticationInfo is not of type MergeableAuthenticationInfo." );
         }
     }
 
