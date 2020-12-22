@@ -129,11 +129,11 @@ public class DefaultSecurityManager extends SessionsSecurityManager {
 
     /**
      * Returns the {@code SubjectDAO} responsible for persisting Subject state, typically used after login or when an
-     * Subject identity is discovered (eg after RememberMe services).  Unless configured otherwise, the default
+     * Subject identity is discovered (e.g. after RememberMe services).  Unless configured otherwise, the default
      * implementation is a {@link DefaultSubjectDAO}.
      *
      * @return the {@code SubjectDAO} responsible for persisting Subject state, typically used after login or when an
-     *         Subject identity is discovered (eg after RememberMe services).
+     *         Subject identity is discovered (e.g. after RememberMe services).
      * @see DefaultSubjectDAO
      * @since 1.2
      */
@@ -143,11 +143,11 @@ public class DefaultSecurityManager extends SessionsSecurityManager {
 
     /**
      * Sets the {@code SubjectDAO} responsible for persisting Subject state, typically used after login or when an
-     * Subject identity is discovered (eg after RememberMe services). Unless configured otherwise, the default
+     * Subject identity is discovered (e.g. after RememberMe services). Unless configured otherwise, the default
      * implementation is a {@link DefaultSubjectDAO}.
      *
      * @param subjectDAO the {@code SubjectDAO} responsible for persisting Subject state, typically used after login or when an
-     *                   Subject identity is discovered (eg after RememberMe services).
+     *                   Subject identity is discovered (e.g. after RememberMe services).
      * @see DefaultSubjectDAO
      * @since 1.2
      */

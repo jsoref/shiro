@@ -30,7 +30,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * A filter that translates an HTTP Request's Method (eg GET, POST, etc)
+ * A filter that translates an HTTP Request's Method (e.g. GET, POST, etc)
  * into an corresponding action (verb) and uses that verb to construct a permission that will be checked to determine
  * access.
  * <p/>
