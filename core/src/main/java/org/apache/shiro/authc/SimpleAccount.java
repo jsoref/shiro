@@ -360,7 +360,7 @@ public class SimpleAccount implements Account, MergableAuthenticationInfo, Salte
     }
 
     /**
-     * Sets all object-based permissions assigned directly to this Account (not any of its realms).
+     * Set al. object-based permissions assigned directly to this Account (not any of its realms).
      *
      * @param permissions the object-based permissions to assign directly to this Account.
      */

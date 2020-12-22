@@ -100,7 +100,7 @@ public class ModularRealmAuthenticator extends AbstractAuthenticator {
     ============================================*/
 
     /**
-     * Sets all realms used by this Authenticator, providing PAM (Pluggable Authentication Module) configuration.
+     * Set al. realms used by this Authenticator, providing PAM (Pluggable Authentication Module) configuration.
      *
      * @param realms the realms to consult during authentication attempts.
      */
