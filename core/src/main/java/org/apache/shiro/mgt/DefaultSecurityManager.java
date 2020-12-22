@@ -63,7 +63,7 @@ import java.util.Collection;
  * for this attribute at startup.
  * <p/>
  * Because RememberMe services are inherently client tier-specific and
- * therefore aplication-dependent, if you want {@code RememberMe} services enabled, you will have to specify an
+ * therefore application-dependent, if you want {@code RememberMe} services enabled, you will have to specify an
  * instance yourself via the {@link #setRememberMeManager(RememberMeManager) setRememberMeManager}
  * mutator.  However if you're reading this JavaDoc with the
  * expectation of operating in a Web environment, take a look at the

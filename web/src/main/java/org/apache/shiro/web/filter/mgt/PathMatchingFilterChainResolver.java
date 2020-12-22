@@ -157,7 +157,7 @@ public class PathMatchingFilterChainResolver implements FilterChainResolver {
      * and can be overridden by subclasses for custom request-to-application-path resolution behavior.
      *
      * @param request the incoming {@code ServletRequest}
-     * @return the request's path within the appliation.
+     * @return the request's path within the application.
      */
     protected String getPathWithinApplication(ServletRequest request) {
         return WebUtils.getPathWithinApplication(WebUtils.toHttp(request));
