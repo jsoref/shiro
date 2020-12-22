@@ -32,7 +32,7 @@ package org.apache.shiro.authc;
  *
  * @since 0.9
  */
-public interface MergableAuthenticationInfo extends AuthenticationInfo {
+public interface MergeableAuthenticationInfo extends AuthenticationInfo {
 
     /**
      * Merges the given {@link AuthenticationInfo} into this instance.  The specific way
