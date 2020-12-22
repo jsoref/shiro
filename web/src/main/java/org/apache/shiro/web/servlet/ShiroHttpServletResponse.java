@@ -84,7 +84,7 @@ public class ShiroHttpServletResponse extends HttpServletResponseWrapper {
      * @param url URL to be encoded
      */
     public String encodeRedirectURL(String url) {
-        if (isEncodeable(toAbsolute(url))) {
+        if (isEncodable(toAbsolute(url))) {
             return toEncoded(url, request.getSession().getId());
         } else {
             return url;
@@ -105,7 +105,7 @@ public class ShiroHttpServletResponse extends HttpServletResponseWrapper {
      */
     public String encodeURL(String url) {
         String absolute = toAbsolute(url);
-        if (isEncodeable(absolute)) {
+        if (isEncodable(absolute)) {
             // W3c spec clearly said
             if (url.equalsIgnoreCase("")) {
                 url = absolute;
@@ -134,7 +134,7 @@ public class ShiroHttpServletResponse extends HttpServletResponseWrapper {
      * @param location Absolute URL to be validated
      * @return {@code true} if the specified URL should be encoded with a session identifier, {@code false} otherwise.
      */
-    protected boolean isEncodeable(final String location) {
+    protected boolean isEncodable(final String location) {
 
         // First check if URL rewriting is disabled globally
         if (Boolean.FALSE.equals(request.getAttribute(ShiroHttpServletRequest.SESSION_ID_URL_REWRITING_ENABLED)))
@@ -155,10 +155,10 @@ public class ShiroHttpServletResponse extends HttpServletResponseWrapper {
         if (hreq.isRequestedSessionIdFromCookie())
             return (false);
 
-        return doIsEncodeable(hreq, session, location);
+        return doIsEncodable(hreq, session, location);
     }
 
-    private boolean doIsEncodeable(HttpServletRequest hreq, HttpSession session, String location) {
+    private boolean doIsEncodable(HttpServletRequest hreq, HttpSession session, String location) {
         // Is this a valid absolute URL?
         URL url;
         try {
@@ -199,7 +199,7 @@ public class ShiroHttpServletResponse extends HttpServletResponseWrapper {
                 return (false);
         }
 
-        // This URL belongs to our web application, so it is encodeable
+        // This URL belongs to our web application, so it is encodable
         return (true);
 
     }
