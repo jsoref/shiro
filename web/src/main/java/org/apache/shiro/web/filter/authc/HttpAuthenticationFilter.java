@@ -287,7 +287,7 @@ abstract class HttpAuthenticationFilter extends AuthenticatingFilter {
      * return authzHeader.toLowerCase().startsWith(authzScheme);</code>
      *
      * @param authzHeader the 'Authorization' header value (guaranteed to be non-null if the
-     *                    {@link #isLoginAttempt(ServletRequest, ServletResponse)} method is not overriden).
+     *                    {@link #isLoginAttempt(ServletRequest, ServletResponse)} method is not overridden).
      * @return <code>true</code> if the authzHeader value matches that configured as defined by
      *         the {@link #getAuthzScheme() authzScheme}.
      */
