@@ -384,7 +384,7 @@ abstract class HttpAuthenticationFilter extends AuthenticatingFilter {
     }
 
     /**
-     * Returns a String[] containing credential parts parsed fom the "Authorization" header.
+     * Returns a String[] containing credential parts parsed from the "Authorization" header.
      *
      * @param scheme  the {@link #getAuthcScheme() authcScheme} found in the request
      *                {@link #getAuthzHeader(ServletRequest) authzHeader}.  It is ignored by this implementation,
