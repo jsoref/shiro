@@ -64,7 +64,7 @@ abstract class HttpAuthenticationFilter extends AuthenticatingFilter {
     protected static final String AUTHENTICATE_HEADER = "WWW-Authenticate";
 
     /**
-     * The name that is displayed during the challenge process of authentication, defauls to <code>application</code>
+     * The name that is displayed during the challenge process of authentication, defaults to <code>application</code>
      * and can be overridden by the {@link #setApplicationName(String) setApplicationName} method.
      */
     private String applicationName = "application";
