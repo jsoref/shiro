@@ -454,7 +454,7 @@ public abstract class JcaCipherService implements CipherService {
      * Calls the {@link javax.crypto.Cipher#doFinal(byte[]) doFinal(bytes)} method, propagating any exception that
      * might arise in an {@link CryptoException}
      *
-     * @param cipher the JDK Cipher to finalize (perform the actual cryption)
+     * @param cipher the JDK Cipher to finalize (perform the actual encryption)
      * @param bytes  the bytes to crypt
      * @return the resulting crypted byte array.
      * @throws CryptoException if there is an illegal block size or bad padding
