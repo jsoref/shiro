@@ -99,7 +99,7 @@ import java.util.Map;
  * and each of these 3 classes has configurable properties that are application-specific.
  * <p/>
  * A dilemma arises where, if you want to for example set the application's 'loginUrl' for any Filter, you don't want
- * to have to manually specify that value for <em>each</em> filter instance definied.
+ * to have to manually specify that value for <em>each</em> filter instance defined.
  * <p/>
  * To prevent configuration duplication, this implementation provides the following properties to allow you
  * to set relevant values in only one place:
