@@ -159,8 +159,8 @@ public class ActiveDirectoryRealm extends AbstractLdapRealm {
         Set<String> roleNames;
         roleNames = new LinkedHashSet<String>();
 
-        SearchControls searchCtls = new SearchControls();
-        searchCtls.setSearchScope(SearchControls.SUBTREE_SCOPE);
+        SearchControls searchControls = new SearchControls();
+        searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
 
         String userPrincipalName = username;
         if (principalSuffix != null) {
@@ -169,7 +169,7 @@ public class ActiveDirectoryRealm extends AbstractLdapRealm {
 
         Object[] searchArguments = new Object[]{userPrincipalName};
 
-        NamingEnumeration answer = ldapContext.search(searchBase, searchFilter, searchArguments, searchCtls);
+        NamingEnumeration answer = ldapContext.search(searchBase, searchFilter, searchArguments, searchControls);
 
         while (answer.hasMoreElements()) {
             SearchResult sr = (SearchResult) answer.next();
