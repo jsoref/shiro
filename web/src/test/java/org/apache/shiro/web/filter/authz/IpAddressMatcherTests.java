@@ -35,7 +35,7 @@ public class IpAddressMatcherTests {
     }
     
     @Test
-    public void ipv6MatcherDoesntMatchIpv4Address() {
+    public void ipv6MatcherDoesNotMatchIpv4Address() {
         assertFalse(v6matcher.matches(ipv4Address));
     }
     

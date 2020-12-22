@@ -53,7 +53,7 @@ public class AllSuccessfulStrategyTest {
     }
 
     @Test(expected = UnsupportedTokenException.class)
-    public void beforeAttemptRealmDoesntSupportToken() {
+    public void beforeAttemptRealmDoesNotSupportToken() {
         Realm notSupportingRealm = new AuthorizingRealm() {
 
             public boolean supports(AuthenticationToken token) {
