@@ -28,7 +28,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Arrays;
 
 /**
- * Extends the annotations authorizing method interceptor class hierarchie to adapt
+ * Extends the annotations authorizing method interceptor class hierarchy to adapt
  * an aspectj {@link JoinPoint} into a {@link MethodInvocation} and to perform the
  * authorization of method invocations.
  *
