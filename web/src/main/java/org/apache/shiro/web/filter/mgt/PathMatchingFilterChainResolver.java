@@ -137,7 +137,7 @@ public class PathMatchingFilterChainResolver implements FilterChainResolver {
      * <p/>
      * Simply delegates to
      * <b><code>{@link #getPathMatcher() getPathMatcher()}.{@link org.apache.shiro.lang.util.PatternMatcher#matches(String, String) matches(pattern,path)}</code></b>.
-     * Subclass implementors should think carefully before overriding this method, as typically a custom
+     * Subclass implementers should think carefully before overriding this method, as typically a custom
      * {@code PathMatcher} should be configured for custom path matching behavior instead.  Favor OO composition
      * rather than inheritance to limit your exposure to Shiro implementation details which may change over time.
      *
