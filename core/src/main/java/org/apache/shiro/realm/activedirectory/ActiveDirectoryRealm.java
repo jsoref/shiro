@@ -60,7 +60,7 @@ public class ActiveDirectoryRealm extends AbstractLdapRealm {
 
     private static final Logger log = LoggerFactory.getLogger(ActiveDirectoryRealm.class);
 
-    private static final String ROLE_NAMES_DELIMETER = ",";
+    private static final String ROLE_NAMES_DELIMITER = ",";
 
     /*--------------------------------------------
     |    I N S T A N C E   V A R I A B L E S    |
@@ -216,7 +216,7 @@ public class ActiveDirectoryRealm extends AbstractLdapRealm {
             for (String groupName : groupNames) {
                 String strRoleNames = groupRolesMap.get(groupName);
                 if (strRoleNames != null) {
-                    for (String roleName : strRoleNames.split(ROLE_NAMES_DELIMETER)) {
+                    for (String roleName : strRoleNames.split(ROLE_NAMES_DELIMITER)) {
 
                         if (log.isDebugEnabled()) {
                             log.debug("User is member of group [" + groupName + "] so adding role [" + roleName + "]");
