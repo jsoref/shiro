@@ -31,7 +31,7 @@ import java.util.Collection;
  * {@link #create}, {@link #readSession(java.io.Serializable)}, {@link #update(org.apache.shiro.session.Session)},
  * and {@link #delete(org.apache.shiro.session.Session)}.
  * <p/>
- * The remaining {@link #getActiveSessions()} method exists as a support mechanism to pre-emptively orphaned sessions,
+ * The remaining {@link #getActiveSessions()} method exists as a support mechanism to preemptively orphaned sessions,
  * typically by {@link org.apache.shiro.session.mgt.ValidatingSessionManager ValidatingSessionManager}s), and should
  * be as efficient as possible, especially if there are thousands of active sessions.  Large scale/high performance
  * implementations will often return a subset of the total active sessions and perform validation a little more
