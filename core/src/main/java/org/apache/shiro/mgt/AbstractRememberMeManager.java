@@ -513,7 +513,7 @@ public abstract class AbstractRememberMeManager implements RememberMeManager {
 
     /**
      * Reacts to a failed login by immediately {@link #forgetIdentity(org.apache.shiro.subject.Subject) forgetting} any
-     * previously remembered identity.  This is an additional security feature to prevent any remenant identity data
+     * previously remembered identity.  This is an additional security feature to prevent any remnant identity data
      * from being retained in case the authentication attempt is not being executed by the expected user.
      *
      * @param subject the subject which executed the failed login attempt
