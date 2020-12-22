@@ -74,7 +74,7 @@ public class ApplicationConfig {
 
 
     /**
-     * Used by the SecurityManager to access security data (users, roles, etc).
+     * Used by the SecurityManager to access security data (users, roles, etc.).
      * Many other realm implementations can be used too (PropertiesRealm,
      * LdapRealm, etc.
      * @param dataSource

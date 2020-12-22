@@ -125,7 +125,7 @@ public class ActiveDirectoryRealm extends AbstractLdapRealm {
      * <p/>
      * This implementation expects the <tt>principal</tt> argument to be a String username.
      * <p/>
-     * Subclasses can override this method to determine authorization data (roles, permissions, etc) in a more
+     * Subclasses can override this method to determine authorization data (roles, permissions, etc.) in a more
      * complex way.  Note that this default implementation does not support permissions, only roles.
      *
      * @param principals         the principal of the Subject whose account is being retrieved.

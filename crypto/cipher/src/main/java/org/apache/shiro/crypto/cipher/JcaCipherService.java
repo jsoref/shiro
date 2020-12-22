@@ -136,7 +136,7 @@ public abstract class JcaCipherService implements CipherService {
 
     /**
      * Returns the cipher algorithm name that will be used for all encryption, decryption, and key operations (for
-     * example, 'AES', 'Blowfish', 'RSA', 'DSA', 'TripleDES', etc).
+     * example, 'AES', 'Blowfish', 'RSA', 'DSA', 'TripleDES', etc.).
      *
      * @return the cipher algorithm name that will be used for all encryption, decryption, and key operations
      */

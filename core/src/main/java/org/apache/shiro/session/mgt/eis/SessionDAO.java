@@ -43,7 +43,7 @@ public interface SessionDAO {
 
     /**
      * Inserts a new Session record into the underling EIS (e.g. Relational database, file system, persistent cache,
-     * etc, depending on the DAO implementation).
+     * etc., depending on the DAO implementation).
      * <p/>
      * After this method is invoked, the {@link org.apache.shiro.session.Session#getId()}
      * method executed on the argument must return a valid session identifier.  That is, the following should
