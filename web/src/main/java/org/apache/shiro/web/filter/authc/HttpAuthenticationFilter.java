@@ -265,7 +265,7 @@ abstract class HttpAuthenticationFilter extends AuthenticatingFilter {
      * <p/>
      * This implementation merely casts the request to an <code>HttpServletRequest</code> and returns the header:
      * <p/>
-     * <code>HttpServletRequest httpRequest = {@link WebUtils#toHttp(ServletRequest) toHttp(reaquest)};<br/>
+     * <code>HttpServletRequest httpRequest = {@link WebUtils#toHttp(ServletRequest) toHttp(request)};<br/>
      * return httpRequest.getHeader({@link #AUTHORIZATION_HEADER AUTHORIZATION_HEADER});</code>
      *
      * @param request the incoming <code>ServletRequest</code>
