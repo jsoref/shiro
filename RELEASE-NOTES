@@ -378,7 +378,7 @@ Bug:
 
     [SHIRO-316] - Annotations in samples-aspectj Project Does not Work
     [SHIRO-351] - Shiro Native Session implementation cannot extract JSESSIONID From URL if JSESSIONID is URL parameter (not HTTP parameter)
-    [SHIRO-379] - SimpleAccoutRealm concurrency access to roles and users
+    [SHIRO-379] - SimpleAccountRealm concurrency access to roles and users
     [SHIRO-380] - runAs feature (still) doesn't work
     [SHIRO-387] - EnvironmentLoader destroys wrong environment
     [SHIRO-388] - Stackoverflow org.apache.shiro.session.SessionListener.onStop()
