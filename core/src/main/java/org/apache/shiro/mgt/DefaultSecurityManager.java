@@ -360,7 +360,7 @@ public class DefaultSecurityManager extends SessionsSecurityManager {
     /**
      * Actually creates a {@code Subject} instance by delegating to the internal
      * {@link #getSubjectFactory() subjectFactory}.  By the time this method is invoked, all possible
-     * {@code SubjectContext} data (session, principals, et. al.) has been made accessible using all known heuristics
+     * {@code SubjectContext} data (session, principals, et al.) has been made accessible using all known heuristics
      * and will be accessible to the {@code subjectFactory} via the {@code subjectContext.resolve*} methods.
      *
      * @param context the populated context (data map) to be used by the {@code SubjectFactory} when creating a
