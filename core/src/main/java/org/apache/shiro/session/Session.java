@@ -149,7 +149,7 @@ public interface Session {
      * It is common for a {@code Subject} implementation to retain authentication state in the
      * {@code Session}.  If the session
      * is explicitly stopped by application code by calling this method directly, it could clear out any
-     * authentication state that might exist, thereby effectively &quot;unauthenticating&quot; the {@code Subject}.
+     * authentication state that might exist, thereby effectively &quot;deauthenticating&quot; the {@code Subject}.
      * <p/>
      * As such, you might consider {@link org.apache.shiro.subject.Subject#logout logging-out} the 'owning'
      * {@code Subject} instead of manually calling this method, as a log out is expected to stop the
