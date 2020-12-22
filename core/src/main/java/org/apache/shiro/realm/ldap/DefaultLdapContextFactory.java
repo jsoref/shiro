@@ -35,7 +35,7 @@ import org.slf4j.LoggerFactory;
  * customize the way {@link javax.naming.ldap.LdapContext} objects are retrieved.</p>
  * <p/>
  * <p>This implementation of {@link LdapContextFactory} is used by the {@link AbstractLdapRealm} if a
- * factory is not explictly configured.</p>
+ * factory is not explicitly configured.</p>
  * <p/>
  * <p>Connection pooling is enabled by default on this factory, but can be disabled using the
  * {@link #usePooling} property.</p>
