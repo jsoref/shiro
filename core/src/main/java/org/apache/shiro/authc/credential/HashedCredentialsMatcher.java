@@ -33,7 +33,7 @@ import org.apache.shiro.lang.util.StringUtils;
  * before being compared to those in the {@code AuthenticationInfo} from the data store.
  * <p/>
  * Credential hashing is one of the most common security techniques when safeguarding a user's private credentials
- * (passwords, keys, etc).  Most developers never want to store their users' credentials in plain form, viewable by
+ * (passwords, keys, etc.).  Most developers never want to store their users' credentials in plain form, viewable by
  * anyone, so they often hash the users' credentials before they are saved in the data store.
  * <p/>
  * This class (and its subclasses) function as follows:
@@ -51,11 +51,11 @@ import org.apache.shiro.lang.util.StringUtils;
  * salting and multiple iterations and why you might want to use them. (Note of sections 5
  * &quot;Why add salt?&quot; and 6 "Hardening against the attacker's attack").   We should also note here that all of
  * Shiro's Hash implementations (for example, {@link org.apache.shiro.crypto.hash.Md5Hash Md5Hash},
- * {@link org.apache.shiro.crypto.hash.Sha1Hash Sha1Hash}, etc) support salting and multiple hash iterations via
+ * {@link org.apache.shiro.crypto.hash.Sha1Hash Sha1Hash}, etc.) support salting and multiple hash iterations via
  * overloaded constructors.
  * <h4>Real World Case Study</h4>
  * In April 2010, some public Atlassian Jira and Confluence
- * installations (Apache Software Foundation, Codehaus, etc) were the target of account attacks and user accounts
+ * installations (Apache Software Foundation, Codehaus, etc.) were the target of account attacks and user accounts
  * were compromised.  The reason?  Jira and Confluence at the time did not salt user passwords and attackers were
  * able to use dictionary attacks to compromise user accounts (Atlassian has since
  * <a href="http://blogs.atlassian.com/news/2010/04/oh_man_what_a_day_an_update_on_our_security_breach.html">
@@ -93,7 +93,7 @@ import org.apache.shiro.lang.util.StringUtils;
  * If this is not possible for some reason, this class will retain 1.0 backwards-compatible behavior of obtaining
  * the salt via the now-deprecated {@link #getSalt(AuthenticationToken) getSalt(AuthenticationToken)} method.  This
  * method will only be invoked if a {@code Realm} <em>does not</em> return
- * {@link SaltedAuthenticationInfo SaltedAutenticationInfo} instances and {@link #isHashSalted() hashSalted} is
+ * {@link SaltedAuthenticationInfo SaltedAuthenticationInfo} instances and {@link #isHashSalted() hashSalted} is
  * {@code true}.
  * But please note that the {@link #isHashSalted() hashSalted} property and the
  * {@link #getSalt(AuthenticationToken) getSalt(AuthenticationToken)} methods will be removed before the Shiro 2.0
@@ -300,7 +300,7 @@ public class HashedCredentialsMatcher extends SimpleCredentialsMatcher {
      * Returns a salt value used to hash the token's credentials.
      * <p/>
      * This default implementation merely returns {@code token.getPrincipal()}, effectively using the user's
-     * identity (username, user id, etc) as the salt, a most common technique.  If you wish to provide the
+     * identity (username, user id, etc.) as the salt, a most common technique.  If you wish to provide the
      * authentication token's salt another way, you may override this method.
      *
      * @param token the AuthenticationToken submitted during the authentication attempt.

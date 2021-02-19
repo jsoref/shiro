@@ -100,7 +100,7 @@ public class ModularRealmAuthenticator extends AbstractAuthenticator {
     ============================================*/
 
     /**
-     * Sets all realms used by this Authenticator, providing PAM (Pluggable Authentication Module) configuration.
+     * Set al. realms used by this Authenticator, providing PAM (Pluggable Authentication Module) configuration.
      *
      * @param realms the realms to consult during authentication attempts.
      */
@@ -210,7 +210,7 @@ public class ModularRealmAuthenticator extends AbstractAuthenticator {
             try {
                 aggregate = strategy.beforeAttempt(realm, token, aggregate);
             } catch (ShortCircuitIterationException shortCircuitSignal) {
-                // Break from continuing with subsequnet realms on receiving 
+                // Break from continuing with subsequent realms on receiving 
                 // short circuit signal from strategy
                 break;
             }

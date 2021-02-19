@@ -112,7 +112,7 @@ public class JDBCRealmTest {
         
         Subject.Builder builder = new Subject.Builder(securityManager);
         Subject currentUser = builder.buildSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(username, "passwrd");
+        UsernamePasswordToken token = new UsernamePasswordToken(username, "password");
         try {
             currentUser.login(token);
         } catch (IncorrectCredentialsException ex) {
@@ -132,7 +132,7 @@ public class JDBCRealmTest {
         
         Subject.Builder builder = new Subject.Builder(securityManager);
         Subject currentUser = builder.buildSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(username, "passwrd");
+        UsernamePasswordToken token = new UsernamePasswordToken(username, "password");
         try {
             currentUser.login(token);
         } catch (AuthenticationException ex) {
@@ -179,7 +179,7 @@ public class JDBCRealmTest {
         
         Subject.Builder builder = new Subject.Builder(securityManager);
         Subject currentUser = builder.buildSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(username, "passwrd");
+        UsernamePasswordToken token = new UsernamePasswordToken(username, "password");
         try {
             currentUser.login(token);
         } catch (IncorrectCredentialsException ex) {
@@ -197,7 +197,7 @@ public class JDBCRealmTest {
 
         Subject.Builder builder = new Subject.Builder(securityManager);
         Subject currentUser = builder.buildSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(username, "passwrd");
+        UsernamePasswordToken token = new UsernamePasswordToken(username, "password");
         try {
             currentUser.login(token);
         } catch (IncorrectCredentialsException ex) {
@@ -228,7 +228,7 @@ public class JDBCRealmTest {
         
         Subject.Builder builder = new Subject.Builder(securityManager);
         Subject currentUser = builder.buildSubject();
-        UsernamePasswordToken token = new UsernamePasswordToken(username, "passwrd");
+        UsernamePasswordToken token = new UsernamePasswordToken(username, "password");
         try {
             currentUser.login(token);
         } catch (IncorrectCredentialsException ex) {

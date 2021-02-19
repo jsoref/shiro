@@ -46,7 +46,7 @@ import java.util.Collection;
 
 /**
  * Default {@link WebSecurityManager WebSecurityManager} implementation used in web-based applications or any
- * application that requires HTTP connectivity (SOAP, http remoting, etc).
+ * application that requires HTTP connectivity (SOAP, http remoting, etc.).
  *
  * @since 0.2
  */
